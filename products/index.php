@@ -50,9 +50,7 @@
 		<td>
 			<a href="view.php?id=<?php echo $products['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i></a>
 			<a href="edit.php?id=<?php echo $products['id']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i></a>
-			<a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-users="<?php echo $products['id']; ?>">
-				<i class="fa fa-trash"></i>
-			</a>
+			<a href="delete.php?id=<?php echo $products['id']; ?>" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
 		</td>
 	</tr>
 <?php endforeach; ?>
